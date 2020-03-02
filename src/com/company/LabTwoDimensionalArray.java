@@ -9,6 +9,7 @@ public class LabTwoDimensionalArray {
       /* lab 2 var 20: Дана матрица A[n][n]. Сформировать вектор В из средних арифметических значений
        строк матрицы. Отсортировать вектор В по возрастанию */
 
+    int a =0;
     Scanner in = new Scanner(System.in);
     System.out.print(" Enter the number of array elements : ");
     int m = in.nextInt();
@@ -26,8 +27,9 @@ public class LabTwoDimensionalArray {
     for (int i = 0; i < arrays.length; i++) {
       for (int j = 0; j < arrays[i].length; j++) {
         sum = sum + arrays[i][j];
+        a=a+1;
       }
-      vec[i] = sum;
+      vec[i] = sum/a;
       sum = 0;
     }
     System.out.println(Arrays.toString(vec));

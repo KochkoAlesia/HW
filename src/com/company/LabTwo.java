@@ -8,7 +8,7 @@ public class LabTwo {
      // lab 2 var 20: Дан массив A[n]. Найти среднее арифметическое элементов массива, кратных заданному числу k.
 
     Scanner in = new Scanner(System.in);
-    int n, k;
+    int n, k, s = 0;
     int sum = 0;
 
     System.out.print("Enter the number of array elements :");
@@ -36,10 +36,11 @@ public class LabTwo {
 
       if (mas[i] % k == 0) {
         sum = sum + mas[i];
+         s=s+1;
       }
     }
 
-    System.out.print("The sum of the array elements is a multiple of " + k + " = " + sum);
+    System.out.print("Arithmetic mean of elements in an array of multiples of " + k + " = " + sum/s);
     System.out.println("");
   }
 }
