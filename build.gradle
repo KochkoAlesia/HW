@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'gsu_profi'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation("org.mockito:mockito-core:3.3.3")
+    testImplementation("org.mockito:mockito-junit-jupiter:3.3.3")
+}
